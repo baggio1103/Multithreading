@@ -13,7 +13,7 @@ public class App {
         start = System.currentTimeMillis();
         numberOfPrimes = IntStream.rangeClosed(2, Integer.MAX_VALUE/100).parallel().filter(App::isPrime).count();
         System.out.println("Number of prime numbers: " + numberOfPrimes);
-        System.out.println("Time taken to complete the complete parallel: " + (System.currentTimeMillis() - start));
+        System.out.println("Time taken to complete the complete in parallel: " + (System.currentTimeMillis() - start));
     }
 
     public static boolean isPrime(int value) {
